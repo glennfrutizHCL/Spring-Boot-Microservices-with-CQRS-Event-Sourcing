@@ -13,11 +13,10 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-
 public class Account {
     @Size(min = 2, message = "username must have a minimum of 2 characters")
     private String username;
-    @Size(min = 2, message = "username must have a minimum of 7 characters")
+    @Size(min = 2, message = "password must have a minimum of 7 characters")
     private String password;
     @NotNull(message = "specify at least 1 user role")
     private List<Role> roles;

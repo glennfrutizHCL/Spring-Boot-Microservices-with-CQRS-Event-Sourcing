@@ -28,6 +28,7 @@ public class UserAggregate {
     public UserAggregate(){
         passwordEncoder = new PasswordEncoderImpl();
     }
+
     @CommandHandler
     public UserAggregate(RegisterUserCommand command){
         var newUser = command.getUser();
